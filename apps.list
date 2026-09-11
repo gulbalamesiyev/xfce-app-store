@@ -1,5 +1,5 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
-tor-browser|Tor Browser|Privacy-focused web browser|pkg install -y tur-repo && pkg install -y tor-browser|tor-browser|Security|1
+tor-browser|Tor Browser|Privacy-focused web browser|pkg install -y tur-repo && apt update && pkg install -y tor-browser-installer|tor-browser|Security|1
 vlc|VLC Player|Versatile media player|vlc|vlc|Multimedia|1
 geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
