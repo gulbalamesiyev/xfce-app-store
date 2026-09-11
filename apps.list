@@ -1,37 +1,37 @@
-firefox|Firefox|Sürətli və təhlükəsiz veb brauzer|firefox|firefox|Internet|1
-tor-browser|Tor Browser|Məxfilik brauzeri|tor-browser|tor-browser|Security|1
-vlc|VLC Player|Hər növ media faylını açan pleyer|vlc|vlc|Multimedia|1
-geany|Geany|Yüngül və sürətli proqramlaşdırma mühiti|geany|geany|Development|1
-gimp|GIMP|Professional şəkil redaktoru|gimp|gimp|Graphics|1
-inkscape|Inkscape|Vektor qrafikası redaktoru|inkscape|inkscape|Graphics|1
-transmission-gtk|Transmission|Yüngül Torrent yükləmə proqramı|transmission-gtk|transmission-gtk|Internet|1
-audacity|Audacity|Səs yazma və redaktə proqramı|audacity|audacity|Multimedia|1
-libreoffice|LibreOffice|Tam ofis paketi|libreoffice|libreoffice|Office|1
-claude|Claude CLI|AI Terminal Agenti|npm install -g @anthropic-ai/claude-code|claude|AI|0
-ollama|Ollama AI|Yerli AI modelləri|ollama|ollama|AI|0
-htop|Htop|İnteraktiv sistem monitoru|htop|htop|System|0
-python|Python|Proqramlaşdırma dili|python|python|Development|0
-nodejs|Node.js|JavaScript işləmə mühiti|nodejs|node|Development|0
-git|Git|Versiya idarəetmə sistemi|git|git|Development|0
-vim|Vim|Mətn redaktoru|vim|vim|Development|0
-code-oss|VS Code|Professional kod redaktoru (Open Source)|code-oss|code-oss|Development|1
-telegram-desktop|Telegram|Məşhur messencerin masaüstü versiyası|telegram-desktop|telegram-desktop|Internet|1
-chromium|Chromium|Açıq mənbəli sürətli brauzer|chromium|chromium|Internet|1
-filezilla|FileZilla|Güclü FTP/SFTP müştərisi|filezilla|filezilla|Internet|1
-sublime-text|Sublime Text|Gözəl və sürətli mətn redaktoru|sublime-text|subl|Development|1
-keepassxc|KeePassXC|Təhlükəsiz şifrə meneceri|keepassxc|keepassxc|System|1
-blender|Blender|3D modelləşdirmə və animasiya proqramı|blender|blender|Graphics|1
-krita|Krita|Professional rəsm və illüstrasiya proqramı|krita|krita|Graphics|1
-arduino|Arduino IDE|Mikrokontrollerlər üçün proqramlaşdırma|arduino|arduino|Development|1
-wireshark|Wireshark|Şəbəkə analizi və monitorinq aləti|wireshark|wireshark|System|1
-thunar|Thunar|XFCE-nin standart fayl meneceri|thunar|thunar|System|1
-mousepad|Mousepad|Sadə və sürətli qeyd dəftəri|mousepad|mousepad|Office|1
-galculator|Calculator|Elmi və sadə hesablayıcı|galculator|galculator|Office|1
-obs-studio|OBS Studio|Ekran yazma və yayım proqramı|obs-studio|obs|Multimedia|1
-deluge|Deluge|Tam funksional BitTorrent müştərisi|deluge|deluge-gtk|Internet|1
-stacer|Stacer|Sistem optimizasiyası və monitorinq|stacer|stacer|System|1
-geeqie|Geeqie|Sürətli şəkil baxma proqramı|geeqie|geeqie|Graphics|1
-leafpad|Leafpad|Çox yüngül mətn redaktoru|leafpad|leafpad|Office|1
-viewnior|Viewnior|Zərif şəkil baxıcı|viewnior|viewnior|Graphics|1
-pavucontrol|Volume Control|Qabaqcıl səs tənzimləmə|pavucontrol|pavucontrol|Multimedia|1
-neofetch|Neofetch|Sistem məlumatlarını terminalda göstər|neofetch|neofetch|System|0
+firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
+tor-browser|Tor Browser|Privacy-focused web browser|tor-browser|tor-browser|Security|1
+vlc|VLC Player|Versatile media player|vlc|vlc|Multimedia|1
+geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
+gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
+inkscape|Inkscape|Vector graphics editor|inkscape|inkscape|Graphics|1
+transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|transmission-gtk|Internet|1
+audacity|Audacity|Audio recording and editing|audacity|audacity|Multimedia|1
+libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
+claude|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
+ollama|Ollama AI|Local AI models runner|ollama|ollama|AI|0
+htop|Htop|Interactive system monitor|htop|htop|System|0
+python|Python|High-level programming language|python|python|Development|0
+nodejs|Node.js|JavaScript runtime environment|nodejs|node|Development|0
+git|Git|Distributed version control system|git|git|Development|0
+vim|Vim|Advanced text editor|vim|vim|Development|0
+code-oss|VS Code|Professional code editor (Open Source)|code-oss|code-oss|Development|1
+telegram-desktop|Telegram|Popular desktop messaging app|telegram-desktop|telegram-desktop|Internet|1
+chromium|Chromium|Open-source fast web browser|chromium|chromium|Internet|1
+filezilla|FileZilla|Powerful FTP/SFTP client|filezilla|filezilla|Internet|1
+sublime-text|Sublime Text|Sophisticated text editor|sublime-text|subl|Development|1
+keepassxc|KeePassXC|Secure password manager|keepassxc|keepassxc|System|1
+blender|Blender|3D modeling and animation software|blender|blender|Graphics|1
+krita|Krita|Professional digital painting software|krita|krita|Graphics|1
+arduino|Arduino IDE|Integrated development environment for Arduino|arduino|arduino|Development|1
+wireshark|Wireshark|Network protocol analyzer|wireshark|wireshark|System|1
+thunar|Thunar|Standard XFCE file manager|thunar|thunar|System|1
+mousepad|Mousepad|Simple and fast text editor|mousepad|mousepad|Office|1
+galculator|Calculator|Scientific and simple calculator|galculator|galculator|Office|1
+obs-studio|OBS Studio|Screen recording and streaming|obs-studio|obs|Multimedia|1
+deluge|Deluge|Full-featured BitTorrent client|deluge|deluge-gtk|Internet|1
+stacer|Stacer|System optimizer and monitoring|stacer|stacer|System|1
+geeqie|Geeqie|Fast image viewer|geeqie|geeqie|Graphics|1
+leafpad|Leafpad|Very lightweight text editor|leafpad|leafpad|Office|1
+viewnior|Viewnior|Elegant image viewer|viewnior|viewnior|Graphics|1
+pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
+neofetch|Neofetch|System information terminal tool|neofetch|neofetch|System|0
