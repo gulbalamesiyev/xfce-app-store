@@ -1,5 +1,5 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
-tor-browser|Tor Browser|Privacy-focused web browser|pkg install -y tur-repo && apt update && pkg install -y tor-browser-installer|tor-browser|Security|1
+tor-browser|Tor Browser|Privacy-focused web browser|pkg install -y tur-repo && apt update && pkg install -y tor-browser-desktop|tor-browser|Security|1
 vlc|VLC Player|Versatile media player|vlc|vlc|Multimedia|1
 geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
@@ -31,7 +31,7 @@ obs-studio|OBS Studio|Screen recording and streaming|obs-studio|obs|Multimedia|1
 deluge|Deluge|Full-featured BitTorrent client|deluge|deluge-gtk|Internet|1
 stacer|Stacer|System optimizer and monitoring|stacer|stacer|System|1
 geeqie|Geeqie|Fast image viewer|geeqie|geeqie|Graphics|1
-leafpad|Leafpad|Very lightweight text editor|pkg install -y x11-repo && apt update && pkg install -y leafpad|leafpad|Office|1
+featherpad|FeatherPad|Lightweight Qt5 text editor|featherpad|featherpad|Office|1
 viewnior|Viewnior|Elegant image viewer|viewnior|viewnior|Graphics|1
 pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
 neofetch|Neofetch|System information terminal tool|neofetch|neofetch|System|0
