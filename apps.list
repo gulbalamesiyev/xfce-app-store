@@ -31,7 +31,7 @@ obs-studio|OBS Studio|Screen recording and streaming|obs-studio|obs|Multimedia|1
 deluge|Deluge|Full-featured BitTorrent client|deluge|deluge-gtk|Internet|1
 stacer|Stacer|System optimizer and monitoring|stacer|stacer|System|1
 geeqie|Geeqie|Fast image viewer|geeqie|geeqie|Graphics|1
-leafpad|Leafpad|Very lightweight text editor|leafpad|leafpad|Office|1
+leafpad|Leafpad|Very lightweight text editor|pkg install -y x11-repo && apt update && pkg install -y leafpad|leafpad|Office|1
 viewnior|Viewnior|Elegant image viewer|viewnior|viewnior|Graphics|1
 pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
 neofetch|Neofetch|System information terminal tool|neofetch|neofetch|System|0
