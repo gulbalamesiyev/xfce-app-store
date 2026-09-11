@@ -1,5 +1,4 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
-tor-browser|Tor Browser|Privacy-focused web browser|pkg install -y tur-repo && apt update && pkg install -y tor-browser-desktop|tor-browser|Security|1
 vlc|VLC Player|Versatile media player|vlc|vlc|Multimedia|1
 geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
@@ -8,30 +7,31 @@ transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|tra
 audacity|Audacity|Audio recording and editing|audacity|audacity|Multimedia|1
 libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
 claude|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
-ollama|Ollama AI|Local AI models runner|ollama|ollama|AI|0
+ollama|Ollama AI|Local AI models runner|pkg install -y tur-repo && pkg install -y ollama|ollama|AI|0
 htop|Htop|Interactive system monitor|htop|htop|System|0
 python|Python|High-level programming language|python|python|Development|0
 nodejs|Node.js|JavaScript runtime environment|nodejs|node|Development|0
 git|Git|Distributed version control system|git|git|Development|0
 vim|Vim|Advanced text editor|vim|vim|Development|0
-code-oss|VS Code|Professional code editor (Open Source)|code-oss|code-oss|Development|1
-telegram-desktop|Telegram|Popular desktop messaging app|telegram-desktop|telegram-desktop|Internet|1
+code-oss|VS Code|Professional code editor (Open Source)|pkg install -y tur-repo && pkg install -y code-oss|code-oss|Development|1
+telegram-desktop|Telegram|Popular desktop messaging app|pkg install -y tur-repo && pkg install -y telegram-desktop|telegram-desktop|Internet|1
 chromium|Chromium|Open-source fast web browser|chromium|chromium|Internet|1
 filezilla|FileZilla|Powerful FTP/SFTP client|filezilla|filezilla|Internet|1
-sublime-text|Sublime Text|Sophisticated text editor|sublime-text|subl|Development|1
 keepassxc|KeePassXC|Secure password manager|keepassxc|keepassxc|System|1
-blender|Blender|3D modeling and animation software|blender|blender|Graphics|1
-krita|Krita|Professional digital painting software|krita|krita|Graphics|1
-arduino|Arduino IDE|Integrated development environment for Arduino|arduino|arduino|Development|1
+blender|Blender|3D modeling and animation software|pkg install -y tur-repo && pkg install -y blender|blender|Graphics|1
+krita|Krita|Professional digital painting software|pkg install -y tur-repo && pkg install -y krita|krita|Graphics|1
+arduino-cli|Arduino CLI|CLI for Arduino programming|arduino-cli|arduino-cli|Development|0
 wireshark|Wireshark|Network protocol analyzer|wireshark|wireshark|System|1
 thunar|Thunar|Standard XFCE file manager|thunar|thunar|System|1
 mousepad|Mousepad|Simple and fast text editor|mousepad|mousepad|Office|1
-galculator|Calculator|Scientific and simple calculator|galculator|galculator|Office|1
+galculator|Galculator|Scientific and simple calculator|galculator|galculator|Office|1
 obs-studio|OBS Studio|Screen recording and streaming|obs-studio|obs|Multimedia|1
-deluge|Deluge|Full-featured BitTorrent client|deluge|deluge-gtk|Internet|1
-stacer|Stacer|System optimizer and monitoring|stacer|stacer|System|1
+xfce4-taskmanager|Task Manager|System resource monitor|xfce4-taskmanager|xfce4-taskmanager|System|1
 ristretto|Ristretto|Fast and lightweight image viewer|ristretto|ristretto|Graphics|1
 featherpad|FeatherPad|Lightweight Qt5 text editor|featherpad|featherpad|Office|1
 viewnior|Viewnior|Elegant image viewer|viewnior|viewnior|Graphics|1
 pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
 neofetch|Neofetch|System information terminal tool|neofetch|neofetch|System|0
+mtpaint|mtPaint|Simple painting program|mtpaint|mtpaint|Graphics|1
+micro|Micro|Modern terminal-based text editor|micro|micro|Development|0
+aria2|aria2|Multi-protocol download utility|aria2c|aria2c|Internet|0
