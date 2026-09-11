@@ -1,0 +1,16 @@
+firefox|Firefox|Web Browser|firefox|firefox|Internet|1
+tor-browser|Tor Browser|Privacy Browser|tor-browser|tor-browser|Security|1
+vlc|VLC Player|Media Player|vlc|vlc|Multimedia|1
+geany|Geany IDE|Code Editor|geany|geany|Development|1
+gimp|GIMP|Image Editor|gimp|gimp|Graphics|1
+inkscape|Inkscape|Vector Editor|inkscape|inkscape|Graphics|1
+transmission-gtk|Transmission|BitTorrent|transmission-gtk|transmission-gtk|Internet|1
+audacity|Audacity|Audio Editor|audacity|audacity|Multimedia|1
+libreoffice|LibreOffice|Office Suite|libreoffice|libreoffice|Office|1
+claude|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
+ollama|Ollama AI|Local AI Models|ollama|ollama|AI|0
+htop|Htop|System Monitor|htop|htop|System|0
+python|Python|Programming|python|python|Development|0
+nodejs|Node.js|JS Runtime|nodejs|node|Development|0
+git|Git|Version Control|git|git|Development|0
+vim|Vim|Text Editor|vim|vim|Development|0
