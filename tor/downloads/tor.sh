@@ -1,16 +1,19 @@
 #!/bin/bash
-# Bridge script to the new Tor Browser GUI Installer
-# Part of the Termux Pro X11 Stage V8 Optimization
-
+# Optimized Bridge for Tor Browser GUI
 REPO_DIR=$(pwd)
-INSTALLER_SCRIPT="$REPO_DIR/tor-browser-gui/install/install.sh"
+INSTALLER_DIR="$REPO_DIR/tor-browser-gui/install"
+[ -z "$TMPDIR" ] && TMPDIR=$PREFIX/tmp
 
-if [ -f "$INSTALLER_SCRIPT" ]; then
-    echo "Transitioning to Tor Browser GUI Installer..."
-    bash "$INSTALLER_SCRIPT"
+if [ -f "$INSTALLER_DIR/install.sh" ]; then
+    echo "Running local installer..."
+    bash "$INSTALLER_DIR/install.sh"
 else
-    echo "New installer not found locally. Falling back to remote execution..."
-    # Fallback to remote if local fails (e.g. if running directly from App Store without full clone)
-    URL="https://raw.githubusercontent.com/gulbalamesiyev/xfce-app-store/main/tor-browser-gui/install/install.sh"
-    curl -L "$URL" -o /tmp/tor_install.sh && bash /tmp/tor_install.sh
+    echo "Downloading remote installer to $HOME/.cache..."
+    mkdir -p "$HOME/.cache"
+    REMOTE_URL="https://raw.githubusercontent.com/gulbalamesiyev/xfce-app-store/main/tor-browser-gui/install/install.sh"
+    PYTHON_REMOTE="https://raw.githubusercontent.com/gulbalamesiyev/xfce-app-store/main/tor-browser-gui/install/install.py"
+
+    curl -L "$REMOTE_URL" -o "$HOME/.cache/install.sh"
+    curl -L "$PYTHON_REMOTE" -o "$HOME/.cache/install.py"
+    bash "$HOME/.cache/install.sh"
 fi

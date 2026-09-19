@@ -1,67 +1,37 @@
 #!/bin/bash
-# Tor Browser GUI Installer for Termux-Pro X11
-# Based on the production-ready architecture
-
+# Tor Browser GUI Installer Wrapper (FIXED)
 set -e
 
-INSTALL_DIR="$HOME/.tor-browser"
-LOG_FILE="$INSTALL_DIR/logs/install.log"
-mkdir -p "$INSTALL_DIR/logs" "$INSTALL_DIR/bin" "$INSTALL_DIR/data"
+INSTALL_ROOT="${HOME}/.tor-browser"
+CACHE_DIR="${HOME}/.cache/tor-browser-install"
+LOG_FILE="${INSTALL_ROOT}/logs/install.log"
 
-echo "[$(date)] Starting installation..." | tee -a "$LOG_FILE"
+mkdir -p "$CACHE_DIR" "$INSTALL_ROOT/logs"
 
-# 1. Install System Dependencies
-echo "Installing dependencies..." | tee -a "$LOG_FILE"
+echo "🔧 Starting Tor Browser GUI Installation..." | tee -a "$LOG_FILE"
+
+# 1. Təməl asılılıqları yoxla və yüklə
 pkg update -y
-pkg install -y tor gtk4 webkit2gtk-4.1 python python-gi python-gi-cairo curl coreutils
+pkg install -y tor python python-pip curl netcat-openbsd
 
-# 2. Check Tor Daemon
-echo "Checking Tor daemon..." | tee -a "$LOG_FILE"
+# 2. Tor Daemon-u yoxla/başlat
 if ! nc -z 127.0.0.1 9050; then
-    echo "Starting Tor..." | tee -a "$LOG_FILE"
+    echo "📡 Starting Tor daemon..." | tee -a "$LOG_FILE"
     tor --quiet &
-    sleep 5
+    sleep 7
 fi
 
-# 3. Download App Files (Simulated for MVP, assuming files are in repo)
-# In production, we'd download the tarball from GitHub
-echo "Setting up application files..." | tee -a "$LOG_FILE"
-cp -r ../* "$INSTALL_DIR/" 2>/dev/null || true
-
-# 4. Create Launcher Script
-cat <<EOF > "$INSTALL_DIR/bin/tor-browser-launcher"
-#!/bin/bash
-if ! nc -z 127.0.0.1 9050; then
-    tor --quiet &
-    sleep 3
+# 3. Python Installer-i işə sal
+PYTHON_SCRIPT="$(dirname "$0")/install.py"
+if [ -f "$PYTHON_SCRIPT" ]; then
+    python3 "$PYTHON_SCRIPT"
+else
+    echo "❌ Error: install.py not found!" | tee -a "$LOG_FILE"
+    exit 1
 fi
-export http_proxy=socks5://127.0.0.1:9050
-export https_proxy=socks5://127.0.0.1:9050
-export ALL_PROXY=socks5://127.0.0.1:9050
-python3 "$INSTALL_DIR/main.py" "\$@"
-EOF
-chmod +x "$INSTALL_DIR/bin/tor-browser-launcher"
 
-# 5. Create Desktop Entry
-mkdir -p "$HOME/.local/share/applications"
-cat <<EOF > "$HOME/.local/share/applications/org.torproject.torbrowser.desktop"
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Tor Browser
-Comment=Anonymous web browsing via Tor Network
-Exec=$INSTALL_DIR/bin/tor-browser-launcher %u
-Icon=tor-browser
-Terminal=false
-StartupNotify=true
-Categories=Network;Security;WebBrowser;
-EOF
+# 4. Desktop Launcher yarat (Köhnə C kodunun gözlədiyi /tmp faylını Termux yoluna görə yarat)
+[ -z "$TMPDIR" ] && TMPDIR=$PREFIX/tmp
+touch "$TMPDIR/.skip_shortcut"
 
-# Copy desktop file to Desktop for easy access
-cp "$HOME/.local/share/applications/org.torproject.torbrowser.desktop" "$HOME/Desktop/"
-chmod +x "$HOME/Desktop/org.torproject.torbrowser.desktop"
-
-# 6. Finalize
-echo "Done. Tor Browser GUI installed." | tee -a "$LOG_FILE"
-touch /tmp/.skip_shortcut
-exit 0
+echo "🚀 Installation finished successfully."
