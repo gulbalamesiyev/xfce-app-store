@@ -1,19 +1,25 @@
 #!/bin/bash
-# Optimized Bridge for Tor Browser GUI
-REPO_DIR=$(pwd)
-INSTALLER_DIR="$REPO_DIR/tor-browser-gui/install"
-[ -z "$TMPDIR" ] && TMPDIR=$PREFIX/tmp
+# Optimized Bridge for Tor Browser GUI (V2)
+# Avoids /tmp due to Termux permission restrictions
+
+INSTALLER_DIR="$(pwd)/tor-browser-gui/install"
+CACHE_DIR="$HOME/.cache/termux-pro-install"
+mkdir -p "$CACHE_DIR"
 
 if [ -f "$INSTALLER_DIR/install.sh" ]; then
     echo "Running local installer..."
     bash "$INSTALLER_DIR/install.sh"
 else
-    echo "Downloading remote installer to $HOME/.cache..."
-    mkdir -p "$HOME/.cache"
-    REMOTE_URL="https://raw.githubusercontent.com/gulbalamesiyev/xfce-app-store/main/tor-browser-gui/install/install.sh"
-    PYTHON_REMOTE="https://raw.githubusercontent.com/gulbalamesiyev/xfce-app-store/main/tor-browser-gui/install/install.py"
+    echo "Downloading remote installer components..."
+    BASE_URL="https://raw.githubusercontent.com/gulbalamesiyev/xfce-app-store/main/tor-browser-gui/install"
 
-    curl -L "$REMOTE_URL" -o "$HOME/.cache/install.sh"
-    curl -L "$PYTHON_REMOTE" -o "$HOME/.cache/install.py"
-    bash "$HOME/.cache/install.sh"
+    curl -L "$BASE_URL/install.sh" -o "$CACHE_DIR/install.sh"
+    curl -L "$BASE_URL/install.py" -o "$CACHE_DIR/install.py"
+
+    if [ -f "$CACHE_DIR/install.sh" ]; then
+        bash "$CACHE_DIR/install.sh"
+    else
+        echo "❌ Critical Error: Failed to download installer components."
+        exit 1
+    fi
 fi
