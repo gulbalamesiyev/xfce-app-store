@@ -16,7 +16,6 @@ code-oss|VS Code|Professional code editor (Open Source)|pkg install -y x11-repo 
 telegram-desktop|Telegram|Popular desktop messaging app|pkg install -y x11-repo && apt update && pkg install -y telegram-desktop|telegram-desktop|Internet|1
 chromium|Chromium|Open-source fast web browser|pkg install -y tur-repo && apt update && pkg install -y chromium|chromium|Internet|1
 keepassxc|KeePassXC|Secure password manager|keepassxc|keepassxc|System|1
-blender|Blender|3D modeling and animation software|pkg install -y tur-repo && apt update && pkg install -y blender|blender|Graphics|1
 krita|Krita|Professional digital painting software|pkg install -y x11-repo && apt update && pkg install -y krita|krita|Graphics|1
 wireshark|Wireshark|Network protocol analyzer|pkg install -y x11-repo && apt update && pkg install -y wireshark-qt|wireshark|System|1
 thunar|Thunar|Standard XFCE file manager|thunar|thunar|System|1
