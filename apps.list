@@ -7,9 +7,9 @@ inkscape|Inkscape|Vector graphics editor|inkscape|inkscape|Graphics|1
 transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|transmission-gtk|Internet|1
 audacity|Audacity|Audio recording and editing|audacity|audacity|Multimedia|1
 libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
-claude|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
-ollama|Ollama AI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
-htop|Htop|Interactive system monitor|htop|htop|System|0
+robot|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
+brain|Ollama CLI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
+utilities-system-monitor|Htop|Interactive system monitor|htop|htop|System|0
 python|Python|High-level programming language|python|python|Development|0
 nodejs|Node.js|JavaScript runtime environment|nodejs|node|Development|0
 git|Git|Distributed version control system|git|git|Development|0
@@ -29,7 +29,7 @@ ristretto|Ristretto|Fast and lightweight image viewer|ristretto|ristretto|Graphi
 featherpad|FeatherPad|Lightweight Qt5 text editor|featherpad|featherpad|Office|1
 gpicview|GPicView|Fast and simple image viewer|pkg install -y x11-repo && apt update && pkg install -y gpicview|gpicview|Graphics|1
 pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
-neofetch|Neofetch|System information terminal tool|neofetch|neofetch|System|0
+system-run|Neofetch|System information terminal tool|neofetch|neofetch|System|0
 mtpaint|mtPaint|Simple painting program|mtpaint|mtpaint|Graphics|1
 micro|Micro|Modern terminal-based text editor|micro|micro|Development|0
-aria2|aria2|Multi-protocol download utility|aria2|aria2c|Internet|0
+folder-download|aria2|Multi-protocol download utility|aria2|aria2c|Internet|0
