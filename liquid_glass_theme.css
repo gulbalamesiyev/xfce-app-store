@@ -1,0 +1,66 @@
+/*
+ * TermuxPro Liquid Glass - Premium Mobile Desktop Theme
+ * Designed by AI Ali Məclisi for 48px Large Touch Targets & Large Cursors
+ */
+
+/* Main Panel - Vertically docked on the right side */
+.xfce4-panel {
+    background-color: rgba(15, 15, 20, 0.35) !important;
+    background-image: none !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.22) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-right: none !important;
+    border-radius: 24px 0px 0px 24px !important; /* Left corners heavily rounded, right flush with screen */
+    box-shadow: -8px 0px 26px rgba(0, 0, 0, 0.45) !important;
+    padding: 6px !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Make sure the text/labels are readable and sharp on glassy background */
+.xfce4-panel label, .xfce4-panel text {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Individual launcher/buttons inside the vertical glass taskbar */
+.xfce4-panel button,
+.xfce4-panel .button,
+.xfce4-panel .tasklist-button {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important; /* Perfectly circular/rounded squares for 48px icons */
+    padding: 8px !important;
+    margin: 6px 0px !important; /* Spacing vertically to prevent thumb miss-clicks */
+    min-width: 52dp !important;
+    min-height: 52dp !important;
+    transition: transform 0.2s cubic-bezier(0.1, 0.8, 0.3, 1), background-color 0.2s ease !important;
+}
+
+/* Liquid Glass Hover Effect (Thumb close simulation / focus) */
+.xfce4-panel button:hover,
+.xfce4-panel .button:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    transform: scale(1.08) translateX(-2px) !important; /* Liquid pop-out towards the left thumb */
+}
+
+/* Liquid Glass Active/Pressed Effect (Thumb down) */
+.xfce4-panel button:active,
+.xfce4-panel button:checked,
+.xfce4-panel .button:active,
+.xfce4-panel .button:checked {
+    background: rgba(0, 180, 216, 0.3) !important; /* Zərif Pro Cyan maye parıltısı */
+    border: 1px solid rgba(0, 180, 216, 0.6) !important;
+    transform: scale(0.95) !important;
+    box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Clock and System Tray integration styling inside the glass cluster */
+#clock-button {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 12px !important;
+    font-size: 11px !important;
+    padding: 4px !important;
+}
