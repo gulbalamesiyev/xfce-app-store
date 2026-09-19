@@ -1,5 +1,5 @@
 #!/bin/bash
-# Tor Browser GUI Installer Wrapper (Stable & Shortcut Fix)
+# Tor Browser GUI Installer Wrapper (Dependency Fix)
 set -e
 
 INSTALL_ROOT="${HOME}/.tor-browser"
@@ -9,26 +9,31 @@ LOG_FILE="${INSTALL_ROOT}/logs/install.log"
 
 echo "🔧 Starting Tor Browser GUI Installation..." | tee -a "$LOG_FILE"
 
-# 1. Install dependencies
+# 1. Update and enable repos
+echo "Updating repositories..." | tee -a "$LOG_FILE"
 pkg update -y
-pkg install -y tor python python-gi python-gi-cairo gtk4 webkit2gtk-4.1 curl netcat-openbsd
+pkg install -y x11-repo tur-repo
 
-# 2. Start Tor if not running
+# 2. Install dependencies with correct Termux names
+# 'pygobject' is the standard name for Python GTK bindings in Termux/X11
+echo "Installing system dependencies..." | tee -a "$LOG_FILE"
+pkg install -y tor python pygobject gtk4 webkit2gtk-4.1 curl netcat-openbsd
+
+# 3. Start Tor if not running
 if ! nc -z 127.0.0.1 9050; then
     echo "📡 Starting Tor daemon..." | tee -a "$LOG_FILE"
     tor --quiet &
     sleep 7
 fi
 
-# 3. Execute Python Installer
-# (Note: install.py should handle downloading and extracting real binaries)
+# 4. Execute Python Installer
 if [ -f "$(dirname "$0")/install.py" ]; then
     python3 "$(dirname "$0")/install.py"
 elif [ -f "$CACHE_DIR/install.py" ]; then
     python3 "$CACHE_DIR/install.py"
 fi
 
-# 4. Create the Launcher Script (Important!)
+# 5. Create the Launcher Script
 cat <<EOF > "$INSTALL_ROOT/bin/tor-browser-launcher"
 #!/bin/bash
 if ! nc -z 127.0.0.1 9050; then
@@ -42,11 +47,9 @@ python3 "$INSTALL_ROOT/main.py" "\$@"
 EOF
 chmod +x "$INSTALL_ROOT/bin/tor-browser-launcher"
 
-# 5. Create Desktop Entry on the actual Desktop
+# 6. Create Desktop Entry
 echo "Creating desktop shortcut..." | tee -a "$LOG_FILE"
 mkdir -p "$HOME/Desktop"
-
-# Find icon (fallback to standard if not found)
 ICON_PATH=$(find $PREFIX/share/icons -name "*tor-browser*" | grep ".png" | head -n 1)
 [ -z "$ICON_PATH" ] && ICON_PATH="tor-browser"
 
@@ -64,11 +67,7 @@ Categories=Network;Security;WebBrowser;
 EOF
 
 chmod +x "$HOME/Desktop/Tor Browser.desktop"
-
-# 6. Force XFCE to refresh the desktop
 xfdesktop --reload 2>/dev/null || true
-
-# 7. Signal success to the C app
 touch "$CACHE_DIR/.skip_shortcut"
 
 echo "🚀 Tor Browser GUI installation finished successfully." | tee -a "$LOG_FILE"
