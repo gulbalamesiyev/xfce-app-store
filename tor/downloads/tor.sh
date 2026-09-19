@@ -29,7 +29,8 @@ EOF
 chmod +755 "$HOME/Desktop/tor-browser.desktop"
 
 # 4. App Store-a de ki, shortcut-ı mən yaratdım, sən qarışma
-touch /tmp/.skip_shortcut
+[ -z "$TMPDIR" ] && TMPDIR=$PREFIX/tmp
+touch "$TMPDIR/.skip_shortcut"
 
 echo "Tor Browser successfully installed with native launcher!"
 exit 0
