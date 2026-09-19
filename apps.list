@@ -8,7 +8,7 @@ transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|tra
 audacity|Audacity|Audio recording and editing|audacity|audacity|Multimedia|1
 libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
 robot|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
-brain|Ollama CLI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
+robot|Ollama CLI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
 utilities-system-monitor|Htop|Interactive system monitor|htop|htop|System|0
 python|Python|High-level programming language|python|python|Development|0
 nodejs|Node.js|JavaScript runtime environment|nodejs|node|Development|0
