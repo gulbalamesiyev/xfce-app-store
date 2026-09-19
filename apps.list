@@ -1,5 +1,5 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
-tor|Tor Browser GUI|Secure & Anonymous Browsing (GTK4)|tor-browser|tor-browser|Security|1
+tor|Tor Browser GUI|Secure & Anonymous Browsing (GTK4)|tor|tor-browser|Security|1
 vlc|VLC Player|Versatile media player|vlc|vlc|Multimedia|1
 geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
@@ -7,7 +7,7 @@ inkscape|Inkscape|Vector graphics editor|inkscape|inkscape|Graphics|1
 transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|transmission-gtk|Internet|1
 audacity|Audacity|Audio recording and editing|audacity|audacity|Multimedia|1
 libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
-robot|Claude CLI|AI Terminal Agent|claude|claude|AI|0
+robot|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
 robot|Ollama CLI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
 utilities-system-monitor|Htop|Interactive system monitor|htop|htop|System|0
 python|Python|High-level programming language|python|python|Development|0
