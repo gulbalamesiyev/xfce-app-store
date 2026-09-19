@@ -1,5 +1,4 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
-vlc|VLC Player|Versatile media player|vlc|vlc|Multimedia|1
 geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
 inkscape|Inkscape|Vector graphics editor|inkscape|inkscape|Graphics|1
@@ -28,5 +27,3 @@ gpicview|GPicView|Fast and simple image viewer|pkg install -y x11-repo && apt up
 pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
 system-run|Neofetch|System information terminal tool|neofetch|neofetch|System|0
 mtpaint|mtPaint|Simple painting program|mtpaint|mtpaint|Graphics|1
-micro|Micro|Modern terminal-based text editor|micro|micro|Development|0
-folder-download|aria2|Multi-protocol download utility|aria2|aria2c|Internet|0
