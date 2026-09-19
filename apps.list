@@ -1,5 +1,5 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
-tor|Tor|Anonymizing network (CLI daemon)|tor|tor|Security|0
+tor|Tor Browser GUI|Secure & Anonymous Browsing (GTK4)|tor|tor-browser|Security|1
 vlc|VLC Player|Versatile media player|vlc|vlc|Multimedia|1
 geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
