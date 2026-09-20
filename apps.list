@@ -1,29 +1,29 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
-geany|Geany|Lightweight and fast IDE|geany|geany|Development|1
+geany|Geany|Lightweight and fast IDE|geany|geany|Dev|1
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
 inkscape|Inkscape|Vector graphics editor|inkscape|inkscape|Graphics|1
 transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|transmission-gtk|Internet|1
 audacity|Audacity|Audio recording and editing|audacity|audacity|Multimedia|1
 libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
 robot|Ollama CLI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
-utilities-system-monitor|Htop|Interactive system monitor|htop|htop|System|0
+utilities-system-monitor|Htop|Interactive system monitor|htop|htop|Tools|0
 python|Python|High-level programming language|python|python|Development|0
 nodejs|Node.js|JavaScript runtime environment|nodejs|node|Development|0
 git|Git|Distributed version control system|git|git|Development|0
 vim|Vim|Advanced text editor|vim|vim|Development|0
-code-oss|VS Code|Professional code editor (Open Source)|pkg install -y x11-repo && apt update && pkg install -y code-oss|code-oss|Development|1
-telegram-desktop|Telegram|Popular desktop messaging app|pkg install -y x11-repo && apt update && pkg install -y telegram-desktop|telegram-desktop|Internet|1
+code-oss|VS Code|Professional code editor (Open Source)|pkg install -y x11-repo && apt update && pkg install -y code-oss|code-oss|Dev|1
+telegram-desktop|Telegram|Popular desktop messaging app|pkg install -y x11-repo && apt update && pkg install -y telegram-desktop|telegram-desktop|Social|1
 chromium|Chromium|Open-source fast web browser|pkg install -y tur-repo && apt update && pkg install -y chromium|chromium|Internet|1
-keepassxc|KeePassXC|Secure password manager|keepassxc|keepassxc|System|1
+keepassxc|KeePassXC|Secure password manager|keepassxc|keepassxc|Tools|1
 krita|Krita|Professional digital painting software|pkg install -y x11-repo && apt update && pkg install -y krita|krita|Graphics|1
-wireshark|Wireshark|Network protocol analyzer|pkg install -y x11-repo && apt update && pkg install -y wireshark-qt|wireshark|System|1
+wireshark|Wireshark|Network protocol analyzer|pkg install -y x11-repo && apt update && pkg install -y wireshark-qt|wireshark|Tools|1
 thunar|Thunar|Standard XFCE file manager|thunar|thunar|System|1
 mousepad|Mousepad|Simple and fast text editor|mousepad|mousepad|Office|1
 galculator|Galculator|Scientific and simple calculator|galculator|galculator|Office|1
-xfce4-taskmanager|Task Manager|System resource monitor|xfce4-taskmanager|xfce4-taskmanager|System|1
+xfce4-taskmanager|Task Manager|System resource monitor|xfce4-taskmanager|xfce4-taskmanager|Tools|1
 ristretto|Ristretto|Fast and lightweight image viewer|ristretto|ristretto|Graphics|1
 featherpad|FeatherPad|Lightweight Qt5 text editor|featherpad|featherpad|Office|1
 gpicview|GPicView|Fast and simple image viewer|pkg install -y x11-repo && apt update && pkg install -y gpicview|gpicview|Graphics|1
 pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
-system-run|Neofetch|System information terminal tool|neofetch|neofetch|System|0
+system-run|Neofetch|System information terminal tool|neofetch|neofetch|Tools|0
 mtpaint|mtPaint|Simple painting program|mtpaint|mtpaint|Graphics|1
