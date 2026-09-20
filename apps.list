@@ -1,29 +1,61 @@
 firefox|Firefox|Fast and secure web browser|firefox|firefox|Internet|1
+chromium|Chromium|Open-source fast web browser|pkg install -y tur-repo && apt update && pkg install -y chromium|chromium|Internet|1
+brave|Brave Browser|Fast, private browser with Ad-Block|pkg install -y tur-repo && apt update && pkg install -y brave|brave|Internet|1
+telegram-desktop|Telegram|Popular desktop messaging app|pkg install -y x11-repo && apt update && pkg install -y telegram-desktop|telegram-desktop|Social|1
+armcord|ArmCord|Discord client optimized for ARM64|pkg install -y x11-repo && apt update && pkg install -y armcord|armcord|Social|1
+whatsapp|WhatsApp Web|Desktop wrapper for WhatsApp|pkg install -y chromium && xdg-open https://web.whatsapp.com|chromium|Social|1
+element-desktop|Element|Secure Matrix messenger client|pkg install -y x11-repo && apt update && pkg install -y element-desktop|element-desktop|Social|1
+slack|Slack|Professional team workspace|pkg install -y chromium && xdg-open https://slack.com|chromium|Social|1
+code-oss|VS Code|Professional code editor (Open Source)|pkg install -y x11-repo && apt update && pkg install -y code-oss|code-oss|Dev|1
+sublime-text|Sublime Text|Sophisticated text editor for code|pkg install -y x11-repo && apt update && pkg install -y sublime-text|subl|Dev|1
 geany|Geany|Lightweight and fast IDE|geany|geany|Dev|1
+pycharm-community|PyCharm|Professional Python IDE|pkg install -y x11-repo && apt update && pkg install -y pycharm-community|pycharm-community|Dev|1
+intellij-idea-community|IntelliJ IDEA|Java & Kotlin IDE for professionals|pkg install -y x11-repo && apt update && pkg install -y intellij-idea-community|intellij-idea-community|Dev|1
+arduino|Arduino IDE|Electronics and hardware programming|pkg install -y x11-repo && apt update && pkg install -y arduino|arduino|Dev|1
+postman|Postman|API development and testing platform|pkg install -y tur-repo && apt update && pkg install -y postman|postman|Dev|1
+dbeaver|DBeaver|Universal database manager (SQL/NoSQL)|pkg install -y x11-repo && apt update && pkg install -y dbeaver|dbeaver|Dev|1
+bluefish|Bluefish|Advanced editor for web developers|pkg install -y bluefish|bluefish|Dev|1
+git|Git|Distributed version control system|git|git|Dev|0
+burpsuite|Burp Suite|Web application security testing|pkg install -y openjdk-17 && curl -L https://portswigger.net/burp/releases/download?product=community&version=2023.12.1.3&type=Jar -o ~/burp.jar|java -jar ~/burp.jar|Cyber|1
+wireshark|Wireshark|Network protocol analyzer|pkg install -y x11-repo && apt update && pkg install -y wireshark-qt|wireshark|Cyber|1
+owasp-zap|OWASP ZAP|World's most widely used web scanner|pkg install -y x11-repo && apt update && pkg install -y zaproxy|zaproxy|Cyber|1
+zenmap|Zenmap|Graphical interface for Nmap scanner|pkg install -y x11-repo && apt update && pkg install -y zenmap|zenmap|Cyber|1
+ghidra|Ghidra|NSA Software Reverse Engineering Suite|pkg install -y x11-repo && apt update && pkg install -y ghidra|ghidra|Cyber|1
+ettercap|Ettercap-GTK|Network security tool for MITM attacks|pkg install -y ettercap-gtk|ettercap-gtk|Cyber|1
+cutter|Cutter|Reverse engineering platform powered by Rizin|pkg install -y x11-repo && apt update && pkg install -y cutter|cutter|Cyber|1
+angry-ip-scanner|Angry IP Scanner|Fast and friendly network scanner|pkg install -y x11-repo && apt update && pkg install -y ipscan|ipscan|Cyber|1
+sqlmap|SQLmap|Automatic SQL injection and DB takeover|pkg install -y python && pip install sqlmap|sqlmap|Cyber|0
+metasploit|Metasploit|Penetration testing framework|pkg install -y metasploit|msfconsole|Cyber|0
 gimp|GIMP|Professional image editor|gimp|gimp|Graphics|1
 inkscape|Inkscape|Vector graphics editor|inkscape|inkscape|Graphics|1
-transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|transmission-gtk|Internet|1
-audacity|Audacity|Audio recording and editing|audacity|audacity|Multimedia|1
-libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
-robot|Ollama CLI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
-utilities-system-monitor|Htop|Interactive system monitor|htop|htop|Tools|0
-python|Python|High-level programming language|python|python|Development|0
-nodejs|Node.js|JavaScript runtime environment|nodejs|node|Development|0
-git|Git|Distributed version control system|git|git|Development|0
-vim|Vim|Advanced text editor|vim|vim|Development|0
-code-oss|VS Code|Professional code editor (Open Source)|pkg install -y x11-repo && apt update && pkg install -y code-oss|code-oss|Dev|1
-telegram-desktop|Telegram|Popular desktop messaging app|pkg install -y x11-repo && apt update && pkg install -y telegram-desktop|telegram-desktop|Social|1
-chromium|Chromium|Open-source fast web browser|pkg install -y tur-repo && apt update && pkg install -y chromium|chromium|Internet|1
-keepassxc|KeePassXC|Secure password manager|keepassxc|keepassxc|Tools|1
 krita|Krita|Professional digital painting software|pkg install -y x11-repo && apt update && pkg install -y krita|krita|Graphics|1
-wireshark|Wireshark|Network protocol analyzer|pkg install -y x11-repo && apt update && pkg install -y wireshark-qt|wireshark|Tools|1
-thunar|Thunar|Standard XFCE file manager|thunar|thunar|System|1
-mousepad|Mousepad|Simple and fast text editor|mousepad|mousepad|Office|1
-galculator|Galculator|Scientific and simple calculator|galculator|galculator|Office|1
-xfce4-taskmanager|Task Manager|System resource monitor|xfce4-taskmanager|xfce4-taskmanager|Tools|1
-ristretto|Ristretto|Fast and lightweight image viewer|ristretto|ristretto|Graphics|1
-featherpad|FeatherPad|Lightweight Qt5 text editor|featherpad|featherpad|Office|1
-gpicview|GPicView|Fast and simple image viewer|pkg install -y x11-repo && apt update && pkg install -y gpicview|gpicview|Graphics|1
-pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Multimedia|1
-system-run|Neofetch|System information terminal tool|neofetch|neofetch|Tools|0
+blender|Blender|3D modeling and animation software|pkg install -y tur-repo && apt update && pkg install -y blender|blender|Graphics|1
+kdenlive|Kdenlive|Professional non-linear video editor|pkg install -y x11-repo && apt update && pkg install -y kdenlive|kdenlive|Graphics|1
+shotcut|Shotcut|Free, open source, cross-platform video editor|pkg install -y x11-repo && apt update && pkg install -y shotcut|shotcut|Graphics|1
 mtpaint|mtPaint|Simple painting program|mtpaint|mtpaint|Graphics|1
+simple-screen-recorder|Screen Recorder|Feature-rich screen recording app|pkg install -y simplescreenrecorder|simplescreenrecorder|Graphics|1
+libreoffice|LibreOffice|Full office productivity suite|libreoffice|libreoffice|Office|1
+obsidian|Obsidian|Private and flexible writing app|pkg install -y x11-repo && apt update && pkg install -y obsidian|obsidian|Office|1
+mousepad|Mousepad|Simple and fast text editor|mousepad|mousepad|Office|1
+featherpad|FeatherPad|Lightweight Qt5 text editor|featherpad|featherpad|Office|1
+xournalpp|Xournal++|Note-taking app with PDF annotation|pkg install -y xournalpp|xournalpp|Office|1
+gnumeric|Gnumeric|Spreadsheet application, fast and accurate|pkg install -y gnumeric|gnumeric|Office|1
+galculator|Galculator|Scientific and simple calculator|galculator|galculator|Office|1
+ollama|Ollama AI|Local AI models runner|pkg install -y tur-repo && apt update && pkg install -y ollama|ollama|AI|0
+robot|Ollama CLI|AI Terminal Interface|pkg install -y ollama|ollama|AI|0
+claude|Claude CLI|AI Terminal Agent|npm install -g @anthropic-ai/claude-code|claude|AI|0
+htop|Htop|Interactive system monitor|htop|htop|Tools|0
+neofetch|Neofetch|System information tool|neofetch|neofetch|Tools|0
+xfce4-taskmanager|Task Manager|System resource monitor|xfce4-taskmanager|xfce4-taskmanager|Tools|1
+keepassxc|KeePassXC|Secure password manager|keepassxc|keepassxc|Tools|1
+bleachbit|BleachBit|Clean files and protect privacy|pkg install -y bleachbit|bleachbit|Tools|1
+stacer|Stacer|Linux System Optimizer and Monitoring|pkg install -y x11-repo && apt update && pkg install -y stacer|stacer|Tools|1
+filezilla|FileZilla|Fast and reliable FTP/SFTP client|pkg install -y filezilla|filezilla|Tools|1
+transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|transmission-gtk|Internet|1
+qbittorrent|qBittorrent|Feature-rich BitTorrent client|pkg install -y x11-repo && apt update && pkg install -y qbittorrent|qbittorrent|Internet|1
+vlc|VLC Player|Versatile media player|pkg install -y vlc|vlc --wrapper-2.0|Graphics|1
+audacity|Audacity|Audio recording and editing|audacity|audacity|Graphics|1
+audacious|Audacious|Lightweight and versatile audio player|pkg install -y audacious|audacious|Office|1
+pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Tools|1
+ristretto|Ristretto|Fast and lightweight image viewer|ristretto|ristretto|Graphics|1
+gpicview|GPicView|Fast and simple image viewer|pkg install -y x11-repo && apt update && pkg install -y gpicview|gpicview|Graphics|1
