@@ -55,7 +55,7 @@ transmission-gtk|Transmission|Lightweight BitTorrent client|transmission-gtk|tra
 qbittorrent|qBittorrent|Feature-rich BitTorrent client|pkg install -y x11-repo && apt update && pkg install -y qbittorrent|qbittorrent|Internet|1
 vlc|VLC Player|Versatile media player|pkg install -y vlc|vlc --wrapper-2.0|Graphics|1
 audacity|Audacity|Audio recording and editing|audacity|audacity|Graphics|1
-audacious|Audacious|Lightweight and versatile audio player|pkg install -y audacious|audacious|Office|1
+audacious|Audacious|Lightweight and versatile audio player|pkg install -y audacious|audacious|Graphics|1
 pavucontrol|Volume Control|Advanced volume control tool|pavucontrol|pavucontrol|Tools|1
 ristretto|Ristretto|Fast and lightweight image viewer|ristretto|ristretto|Graphics|1
 gpicview|GPicView|Fast and simple image viewer|pkg install -y x11-repo && apt update && pkg install -y gpicview|gpicview|Graphics|1
