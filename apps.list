@@ -3,7 +3,7 @@ python|Python 3|Python Programming Language & Pip|pkg install -y python|python|D
 git|Git|Fast, scalable, distributed revision control system|pkg install -y git|git|Dev|0
 nodejs|Node.js|JavaScript runtime built on V8|pkg install -y nodejs|node|Dev|0
 firefox|Firefox|Fast and secure web browser|pkg install -y x11-repo && apt update && pkg install -y firefox|firefox|Internet|1
-chromium|Chromium|Open-source fast web browser|pkg install -y tur-repo && apt update && pkg install -y chromium|chromium|Internet|1
+chromium|Chromium|Open-source fast web browser|pkg install -y tur-repo && apt update && pkg install -y chromium libc++|chromium-browser|Internet|1
 telegram-desktop|Telegram|Popular desktop messaging app|pkg install -y x11-repo && apt update && pkg install -y telegram-desktop|telegram-desktop|Social|1
 code-oss|VS Code|Professional code editor (Open Source)|pkg install -y x11-repo && apt update && pkg install -y code-oss|code-oss|Dev|1
 geany|Geany|Lightweight and fast IDE|pkg install -y x11-repo && apt update && pkg install -y geany|geany|Dev|1
