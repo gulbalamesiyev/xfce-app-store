@@ -1,4 +1,4 @@
-openjdk-17|Java 17 (OpenJDK)|Java Development Kit and Runtime Environment|pkg install -y openjdk-17|java|Dev|0
+openjdk-21|Java 21 (OpenJDK)|Java Development Kit and Runtime Environment|JDK_PKG=$(pkg search openjdk | grep -oE 'openjdk-[0-9]+' | sort -V | tail -n 1); pkg install -y ${JDK_PKG:-openjdk-21}|java|Dev|0
 python|Python 3|Python Programming Language & Pip|pkg install -y python|python|Dev|0
 git|Git|Fast, scalable, distributed revision control system|pkg install -y git|git|Dev|0
 nodejs|Node.js|JavaScript runtime built on V8|pkg install -y nodejs|node|Dev|0
@@ -9,9 +9,9 @@ code-oss|VS Code|Professional code editor (Open Source)|pkg install -y x11-repo 
 geany|Geany|Lightweight and fast IDE|pkg install -y x11-repo && apt update && pkg install -y geany|geany|Dev|1
 dbeaver|DBeaver|Universal database manager (SQL/NoSQL)|pkg install -y x11-repo && apt update && pkg install -y dbeaver|dbeaver|Dev|1
 bluefish|Bluefish|Advanced editor for web developers|pkg install -y x11-repo && apt update && pkg install -y bluefish|bluefish|Dev|1
-burpsuite|Burp Suite|Web application security testing|pkg install -y openjdk-17 wget && wget -c -O ~/burp.jar "https://portswigger.net/burp/releases/download?product=community&version=2024.2.1.3&type=Jar"|java -jar ~/burp.jar|Cyber|1
+burpsuite|Burp Suite|Web application security testing|pkg update -y && JDK_PKG=$(pkg search openjdk | grep -oE 'openjdk-[0-9]+' | sort -V | tail -n 1); pkg install -y ${JDK_PKG:-openjdk-21} wget && wget -c -O ~/burp.jar "https://portswigger.net/burp/releases/download?product=community&version=2024.2.1.3&type=Jar"|java -jar ~/burp.jar|Cyber|1
 wireshark|Wireshark|Network protocol analyzer|pkg install -y x11-repo && apt update && pkg install -y wireshark-qt|wireshark|Cyber|1
-angry-ip-scanner|Angry IP Scanner|Fast and friendly network scanner|pkg install -y openjdk-17 wget && wget -c -O ~/ipscan.jar "https://github.com/angryip/ipscan/releases/download/3.10.0/ipscan-3.10.0-linux64.jar"|java -jar ~/ipscan.jar|Cyber|1
+angry-ip-scanner|Angry IP Scanner|Fast and friendly network scanner|pkg update -y && JDK_PKG=$(pkg search openjdk | grep -oE 'openjdk-[0-9]+' | sort -V | tail -n 1); pkg install -y ${JDK_PKG:-openjdk-21} wget && wget -c -O ~/ipscan.jar "https://github.com/angryip/ipscan/releases/download/3.10.0/ipscan-3.10.0-linux64.jar"|java -jar ~/ipscan.jar|Cyber|1
 sqlmap|SQLmap|Automatic SQL injection and DB takeover|pkg install -y python && pip install sqlmap|sqlmap|Cyber|0
 metasploit|Metasploit|Penetration testing framework|pkg install -y metasploit|msfconsole|Cyber|0
 gimp|GIMP|Professional image editor|pkg install -y x11-repo && apt update && pkg install -y gimp|gimp|Graphics|1
